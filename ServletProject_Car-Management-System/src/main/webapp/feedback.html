@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Feedback Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      overflow: hidden;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 50px auto;
+      background-color: #202020;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: calc(100% - 20px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+      background-color: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #ff6600;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #ff8533;
+    }
+
+    button:focus {
+      outline: none;
+    }
+
+    .fa-car {
+      color: #ff6600;
+      font-size: 48px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <i class="fas fa-car"></i>
+    <h1> Feedback Form</h1>
+    <form action="#">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" name="feedback" required></textarea>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+  </div>
+</body>
+</html>

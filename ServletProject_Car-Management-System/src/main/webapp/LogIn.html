@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	background-image:
+		url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXlyNDg5bDJoN2FhZ2c2aHptZXEzZjkwdjgyaXVuM2R3NnJ1bm9maSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mlBDoVLOGidEc/giphy.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Arial, sans-serif;
+}
+
+form {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 30px;
+	border-radius: 10px;
+	max-width: 400px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+legend {
+	color: #FFD700;
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+input[type="email"], input[type="password"], input[type="submit"], a {
+	padding: 10px;
+	margin: 10px 0;
+	border: none;
+	border-radius: 5px;
+	width: calc(100% - 20px);
+	box-sizing: border-box;
+	font-size: 16px;
+	background-color: #1E1E1E;
+	color: #fff;
+	transition: background-color 0.3s;
+}
+
+input[type="submit"] {
+	background-color: #FFD700;
+	color: #222;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+input[type="submit"]:hover, a:hover {
+	background-color: #FFA500;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	display: inline-block;
+	width: auto;
+	margin-top: 10px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+	form {
+		padding: 20px;
+	}
+	input[type="email"], input[type="password"], input[type="submit"], a {
+		padding: 8px;
+		font-size: 14px;
+	}
+}
+</style>
+<script>
+    function welcome(){
+        alert("Welcome to Manjiro Auto😁🙋");
+    }
+</script>
+</head>
+<body>
+	<div>
+		<form id="form" action="LoginServlet" method="post">
+			<fieldset>
+				<legend>Welcome User 😁</legend>
+				<input type="email" name="email" id="email" placeholder="Email"
+					required> <input type="password" name="password"
+					id="password" placeholder="Password" required> <input
+					type="submit" value="Confirm" onclick="welcome()"> <a
+					href="index.html">Cancle</a>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>

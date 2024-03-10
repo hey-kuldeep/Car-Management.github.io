@@ -1,0 +1,38 @@
+@charset "ISO-8859-1";
+
+.carousel-inner img{
+
+    height: 90.5vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.login{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    margin-top: -150px;
+    margin-left: 50px;
+    position: sticky;
+}
+
+#start{
+    border: 2px solid whitesmoke;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+#start:hover{
+    font-size: large;
+    border: 1px solid whitesmoke;
+   background-color: rgba(255, 255, 255, 0.247);
+}
+
+#start a{
+    color: white;
+    text-decoration: none;
+}
